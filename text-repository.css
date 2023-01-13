@@ -1,0 +1,24 @@
+.leanier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 200px;
+  background: rgb(3, 70, 3);
+
+  box-shadow: 0 0 10px 20px rgb(237, 167, 167);
+}
+p {
+  text-align: center;
+  font-size: large;
+  background: rgb(2, 57, 78);
+  color: rgb(251, 221, 221);
+  padding: 10px;
+  border: 1px solid greenyellow;
+  border-radius: 20px;
+}
+.ab :hover {
+  background: rgb(16, 163, 222);
+  transform: scale(1.2);
+}
