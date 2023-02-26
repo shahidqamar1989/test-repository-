@@ -105,3 +105,74 @@ let massage = (myPermission & readPermission) ? 'yes' : 'no';
 
 console.log(massage);   
 
+
+// sum of multipal 3 and 5
+
+function sum(limitNomber) {
+    let sum = 0;
+    for (let i = 0; i <= limitNomber; i++)
+    if (i % 3 === 0 || i % 5 === 0)
+    sum += i;
+    return sum;
+}
+console.log(sum(10));
+
+
+
+// Exerdise Grade
+
+const marks = [80, 100, 50, 100, ];
+
+function calculateMGrade() {
+    const average = calculateaverage(marks);
+    if (average < 60) return 'f';
+    if (average < 70) return 'D';
+    if (average < 80) return 'C';
+    if (average < 90) return 'B';
+    return 'A';
+   
+}
+
+
+function calculateaverage(array) {
+    let sum = 0;
+    
+    for (let value of array) 
+        sum += value;       
+     return sum / array.length;   
+}
+
+
+console.log(calculateMGrade());
+console.log(calculateaverage(marks))
+
+
+// Show star
+
+
+
+showstars(10)
+
+function showstars(lines) {
+    for (let row = lines; row > 0; row--) {
+        let pattren = '';
+
+        for (let i = 0; i < row; i++)
+            pattren += '*'
+        console.log(pattren)
+    }
+}
+
+
+
+showstar(20)
+
+function showstar(lines) {
+    for (let row = 1; row <= lines; row++) {
+        let pattren = '';
+        
+        for (let i = 0; i < row; i++)
+            pattren += '*'
+        console.log(pattren)
+    }
+}
